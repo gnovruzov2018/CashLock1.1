@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"
+            android:id="@+id/buttonBack"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitStart"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Add Transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBadgets"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_save"
+            android:id="@+id/buttonSave"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitEnd"
+            android:layout_margin="10dp"
+            android:onClick="true"/>
+    </LinearLayout>
+</LinearLayout>

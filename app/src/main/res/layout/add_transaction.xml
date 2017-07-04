@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_back"
+                android:id="@+id/buttonBack"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitStart"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="Add Transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textBadgets"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_save"
+                android:id="@+id/buttonSave"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitEnd"
+                android:layout_margin="10dp"
+                android:onClick="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edit_amount"
+            android:layout_weight="1"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:drawableRight="@drawable/ic_attach_money_black_24dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Category"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="?attr/colorControlNormal"
+            />
+
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_weight="1"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+    </LinearLayout>
+
+      <LinearLayout  android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_date"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="?attr/colorControlNormal"
+            android:layout_marginLeft="15dp"/>
+
+          <TextView
+              android:text="Time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/text_time"
+              android:layout_weight="1"
+              android:textSize="18sp"
+              android:textColor="?attr/colorControlNormal"/>
+
+    </LinearLayout>
+    <LinearLayout  android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/date"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:drawableEnd="@drawable/ic_event_available_black_24dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/timeinhour"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:drawableEnd="@drawable/ic_access_time_black_24dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/expense_location"
+            android:layout_weight="1"
+            android:hint="Get Location"
+            android:drawableRight="@drawable/ic_place_black_24dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Note"
+            android:id="@+id/edit_note"
+            android:drawableRight="@drawable/ic_event_note_black_24dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <TextView
+            android:text="Rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_rate"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="?attr/colorControlNormal"
+            android:layout_marginBottom="10dp"
+           />
+
+        <RatingBar
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:isIndicator="false"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            />
+    </LinearLayout>
+</LinearLayout>
